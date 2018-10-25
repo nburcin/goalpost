@@ -146,8 +146,28 @@
                                                     <color key="textColor" red="0.42745098039215684" green="0.73725490196078436" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KZ-rX-luH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veh-aV-MEz">
+                                                            <rect key="frame" x="56.5" y="14.5" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="veh-aV-MEz" firstAttribute="centerX" secondItem="5KZ-rX-luH" secondAttribute="centerX" id="2xO-FA-c0f"/>
+                                                        <constraint firstItem="veh-aV-MEz" firstAttribute="centerY" secondItem="5KZ-rX-luH" secondAttribute="centerY" id="qy4-F8-y4u"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="5KZ-rX-luH" firstAttribute="top" secondItem="9NA-99-KXV" secondAttribute="top" id="6VK-NE-Fac"/>
+                                                <constraint firstAttribute="bottom" secondItem="5KZ-rX-luH" secondAttribute="bottom" id="B4K-Wr-56N"/>
+                                                <constraint firstAttribute="trailing" secondItem="5KZ-rX-luH" secondAttribute="trailing" id="Oo7-B8-c8B"/>
+                                                <constraint firstItem="5KZ-rX-luH" firstAttribute="leading" secondItem="9NA-99-KXV" secondAttribute="leading" id="U6Y-oL-Xc1"/>
                                                 <constraint firstItem="1SQ-1e-Pek" firstAttribute="leading" secondItem="yGE-ul-esO" secondAttribute="trailing" constant="10" id="ZEt-mn-23j"/>
                                                 <constraint firstItem="yGE-ul-esO" firstAttribute="top" secondItem="9NA-99-KXV" secondAttribute="topMargin" id="fmn-ZF-ljp"/>
                                                 <constraint firstItem="1SQ-1e-Pek" firstAttribute="top" secondItem="9NA-99-KXV" secondAttribute="top" constant="8" id="hQ6-BL-2oV"/>
@@ -158,6 +178,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="5KZ-rX-luH" id="2A9-kr-R1A"/>
                                             <outlet property="goalDescriptionLbl" destination="JrZ-sO-YCm" id="gAS-Cn-kpd"/>
                                             <outlet property="goalProgressLbl" destination="1SQ-1e-Pek" id="joV-1d-h7b"/>
                                             <outlet property="goalTypeLbl" destination="CyQ-mK-EQ1" id="fYx-8t-FCV"/>
