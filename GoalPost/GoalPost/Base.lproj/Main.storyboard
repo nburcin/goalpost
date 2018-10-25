@@ -38,7 +38,12 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xjd-Yo-Y6M">
-                                        <rect key="frame" x="325" y="29.5" width="35" height="32"/>
+                                        <rect key="frame" x="295" y="20.5" width="80" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="TqT-1v-ALK"/>
+                                            <constraint firstAttribute="width" constant="80" id="Ukh-LT-bRg"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="addGoal"/>
                                         <connections>
                                             <action selector="addGoalBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77Q-bK-vRc"/>
@@ -49,7 +54,7 @@
                                 <constraints>
                                     <constraint firstItem="A4z-WM-c2B" firstAttribute="centerX" secondItem="FJd-Fc-3hH" secondAttribute="centerX" id="8k5-VM-AS2"/>
                                     <constraint firstAttribute="height" constant="70" id="Bkz-iD-e1X"/>
-                                    <constraint firstAttribute="trailing" secondItem="Xjd-Yo-Y6M" secondAttribute="trailing" constant="15" id="NyY-WU-iAf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xjd-Yo-Y6M" secondAttribute="trailing" id="NyY-WU-iAf"/>
                                     <constraint firstAttribute="bottom" secondItem="A4z-WM-c2B" secondAttribute="bottom" constant="12" id="pqJ-vb-gGf"/>
                                     <constraint firstItem="Xjd-Yo-Y6M" firstAttribute="centerY" secondItem="Wf2-jv-dXC" secondAttribute="centerY" id="raF-B6-ivX"/>
                                 </constraints>
@@ -205,8 +210,13 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEt-8w-Ylj">
-                                        <rect key="frame" x="15" y="33" width="14" height="25"/>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEt-8w-Ylj">
+                                        <rect key="frame" x="0.0" y="20.5" width="80" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bZj-8A-VMu"/>
+                                            <constraint firstAttribute="width" constant="80" id="h7g-Jx-JiN"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="-25" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" image="back"/>
                                         <connections>
                                             <action selector="backBtnPressed:" destination="ABJ-0d-qn7" eventType="touchUpInside" id="DlD-DD-qZx"/>
@@ -219,7 +229,7 @@
                                     <constraint firstAttribute="height" constant="70" id="cUK-LA-rwJ"/>
                                     <constraint firstItem="rEt-8w-Ylj" firstAttribute="centerY" secondItem="AB5-aC-ABJ" secondAttribute="centerY" id="idL-5V-ib5"/>
                                     <constraint firstItem="ddm-Hc-kTG" firstAttribute="centerX" secondItem="Hb6-ov-Czc" secondAttribute="centerX" id="jr3-t7-D7E"/>
-                                    <constraint firstItem="rEt-8w-Ylj" firstAttribute="leading" secondItem="Hb6-ov-Czc" secondAttribute="leading" constant="15" id="z21-QQ-byb"/>
+                                    <constraint firstItem="rEt-8w-Ylj" firstAttribute="leading" secondItem="Hb6-ov-Czc" secondAttribute="leading" id="z21-QQ-byb"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KyZ-Dh-Khm">
