@@ -15,6 +15,9 @@ class GoalsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var undoDeleteView: UIView!
+    
+    
     var goals: [Goal] = []
     
     override func viewDidLoad() {
@@ -47,6 +50,11 @@ class GoalsVC: UIViewController {
         guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalVC") else { return }
         presentDetail(createGoalVC)
     }
+    
+    @IBAction func undoDeletePressed(_ sender: Any) {
+        undoDeleteView.isHidden = true
+    }
+    
     
 }
 
